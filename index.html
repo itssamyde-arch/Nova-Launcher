@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nova Client – Fabric-Client &amp; Launcher</title>
+	<meta name="description" content="Nova Client ist ein Fabric-Client für Minecraft: Java Edition mit Weltkarte, Zoom, Freecam, Emotes, Capes und Flügeln – samt eigenem Launcher mit Microsoft-Anmeldung.">
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<symbol id="logo" viewBox="-34 -36 68 76">
+			<mask id="cut"><rect x="-40" y="-40" width="80" height="80" fill="#fff"/><circle cx="6.3" cy="-2.5" r="12.3" fill="#000"/></mask>
+			<path d="M-26 18V-10.5A26 19.5 0 0 1 26-10.5V18Z" fill="currentColor"/>
+			<path d="M-23 18V-8.5A23 16.5 0 0 1 23-8.5V18Z" fill="#04080d"/>
+			<circle cx="0" cy="2" r="15" fill="currentColor" mask="url(#cut)"/>
+			<path d="M-14-18v8M-18-14h8M10-21v6M7-18h6M15-10v8M11-6h8" stroke="currentColor" stroke-width="1.6"/>
+			<path d="M-30 17h60M-26 21h52M-20 25h40M-12 29h24" stroke="currentColor" stroke-width="2"/>
+		</symbol>
+	</svg>
+
+	<header class="top">
+		<div class="wrap">
+			<a class="brand" href="#"><svg><use href="#logo"/></svg>NOVA</a>
+			<nav aria-label="Seiten">
+				<a href="#funktionen">Funktionen</a>
+				<a href="#launcher" class="optional">Launcher</a>
+				<a href="#anmeldung" class="optional">Sicherheit</a>
+				<a href="datenschutz.html">Datenschutz</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="stars" aria-hidden="true"></div>
+			<div class="wrap">
+				<div>
+					<p class="eyebrow">Fabric · Minecraft 26.1 – 26.3</p>
+					<h1>Nova<br>Client</h1>
+					<p class="lede">Ein Client für klare Nächte: Weltkarte, Zoom, Freecam, Fullbright, Emotes, Capes und Flügel – und ein eigener Launcher, der alles mit einem Klick startet.</p>
+					<div class="actions">
+						<a class="button" href="#download">Zum Download</a>
+						<a class="button ghost" href="#funktionen">Funktionen ansehen</a>
+					</div>
+				</div>
+				<figure class="shot">
+					<img src="img/launcher.png" width="1120" height="700" alt="Der Nova Launcher: großer Spielen-Knopf, Profilauswahl und Microsoft-Anmeldung vor einem Nachthimmel mit dem Nova-Mond.">
+				</figure>
+			</div>
+		</section>
+
+		<div class="keys-band" aria-label="Tasten">
+			<ul class="wrap">
+				<li><kbd>⇧</kbd>Mod-Menü</li>
+				<li><kbd>M</kbd>Weltkarte</li>
+				<li><kbd>C</kbd>Zoom</li>
+				<li><kbd>F4</kbd>Freecam</li>
+				<li><kbd>G</kbd>Fullbright</li>
+				<li><kbd>V</kbd>Emotes</li>
+				<li><kbd>K</kbd>Skin-Vorschau</li>
+			</ul>
+		</div>
+
+		<section id="funktionen">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="eyebrow">Funktionen</p>
+					<h2>Alles drin, was du beim Spielen brauchst.</h2>
+					<p>Nova läuft als Fabric-Mod und funktioniert mit Sodium, Lithium und den meisten anderen Mods zusammen.</p>
+				</div>
+
+				<div class="features">
+					<article class="feature">
+						<div class="feature-text">
+							<h3>Emotes, die andere sehen</h3>
+							<p>Drück <kbd>V</kbd> und wähl ein Emote – zum Start die T-Pose. Alle anderen Nova-Spieler sehen es live. Sobald du dich bewegst, endet es von selbst.</p>
+						</div>
+						<figure class="shot"><img src="img/emote.png" width="854" height="480" loading="lazy" alt="Ein anderer Nova-Spieler steht in T-Pose mit weißen Engelsflügeln und Polarlicht-Cape auf einer Wiese."></figure>
+					</article>
+
+					<article class="feature">
+						<div class="feature-text">
+							<h3>Capes &amp; Flügel</h3>
+							<p>Wähle im Mod-Menü unter „Kosmetik“ ein Cape und Flügel. Die 3D-Vorschau zeigt sofort, wie es aussieht – und jeder mit Nova sieht dich so.</p>
+							<ul>
+								<li>Capes: Nova, Polarlicht, Glut</li>
+								<li>Flügel: Nachtflügel, Engelsflügel, Glutflügel</li>
+							</ul>
+						</div>
+						<figure class="shot"><img src="img/cosmetics.png" width="854" height="480" loading="lazy" alt="Die Kosmetik-Auswahl: links die drehbare Vorschau des Spielers mit Nova-Cape und Nachtflügeln, rechts die Listen der Capes und Flügel."></figure>
+					</article>
+
+					<article class="feature">
+						<div class="feature-text">
+							<h3>Weltkarte mit Wegpunkten</h3>
+							<p>Nova zeichnet die Gegend auf, die du erkundest. Wegpunkte setzt du mit Rechtsklick auf der Karte oder mit <kbd>B</kbd> – ein Kompass oben zeigt dir den Weg. Stirbst du, merkt sich Nova die Stelle.</p>
+						</div>
+						<figure class="shot"><img src="img/map.png" width="854" height="480" loading="lazy" alt="Die Nova-Weltkarte mit Küste, Wald und den Wegpunkten „Basis“ und „Mine“."></figure>
+					</article>
+
+					<article class="feature">
+						<div class="feature-text">
+							<h3>Dein Menü, deine Skin</h3>
+							<p>Mit <kbd>⇧</kbd> öffnest du das Mod-Menü: jedes Modul an- und ausschalten, Optionen anpassen, HUD frei verschieben. Daneben steht deine Figur zum Drehen.</p>
+							<ul>
+								<li>FPS, Koordinaten, Kompass im HUD</li>
+								<li>Zoom, Freecam, Fullbright</li>
+								<li>Mouse Tweaks mit Crafting-Nachfüllen</li>
+								<li>Alles wird automatisch gespeichert</li>
+							</ul>
+						</div>
+						<figure class="shot"><img src="img/menu.png" width="854" height="480" loading="lazy" alt="Das Nova-Mod-Menü mit Modulkarten und rechts der Skin-Vorschau."></figure>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="launcher" class="launcher">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="eyebrow">Nova Launcher</p>
+					<h2>Ein Klick auf „Spielen“.</h2>
+					<p>Der Launcher lädt Minecraft, Java, Fabric und Nova selbst herunter und hält alles aktuell. Mit Profilen spielst du verschiedene Versionen und Mod-Sammlungen getrennt – Mods findest du direkt über Modrinth.</p>
+				</div>
+				<div class="gallery">
+					<figure class="shot"><img src="img/launcher-mods.png" width="1120" height="700" loading="lazy" alt="Mod-Suche im Launcher mit Sodium, Iris und weiteren Mods von Modrinth und einem Knopf zum Installieren."></figure>
+					<div class="stack">
+						<figure class="shot"><img src="img/launcher-profiles.png" width="1120" height="700" loading="lazy" alt="Profilliste im Launcher mit Nova 26.3, 26.2 und 26.1.2."></figure>
+						<figure class="shot"><img src="img/wings.png" width="854" height="480" loading="lazy" alt="Der Spieler von hinten mit Nova-Cape und blauen Nachtflügeln."></figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="anmeldung">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="eyebrow">Sicherheit</p>
+					<h2>Deine Anmeldung bleibt bei dir.</h2>
+				</div>
+				<div class="split">
+					<div>
+						<h3>Offizieller Microsoft-Login</h3>
+						<p>Du meldest dich in einem Fenster von Microsoft selbst an. Dein Passwort sieht der Launcher nie.</p>
+					</div>
+					<div>
+						<h3>Nur mit gekauftem Spiel</h3>
+						<p>Der Launcher prüft bei Minecraft, ob dein Konto das Spiel besitzt. Ohne Kauf kein Start – es gibt keinen Offline-Modus.</p>
+					</div>
+					<div>
+						<h3>Verschlüsselt auf deinem PC</h3>
+						<p>Die Anmeldung wird mit deinem Windows-Konto verschlüsselt gespeichert und an niemanden weitergegeben.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="download" class="download">
+			<div class="wrap">
+				<p class="eyebrow">Download</p>
+				<h2>Nova kommt bald für alle.</h2>
+				<p class="status">Der Launcher wartet auf die Freigabe der Anmeldung</p>
+				<p class="note">Sobald die Microsoft-Anmeldung freigeschaltet ist, findest du den Installer hier.</p>
+			</div>
+		</section>
+
+		<section class="english" lang="en">
+			<div class="wrap">
+				<h2>About Nova Launcher</h2>
+				<p>Nova Launcher is a Windows launcher for Nova Client, a client-side Fabric mod for Minecraft: Java Edition. Players sign in with their own Microsoft account in Microsoft's official sign-in window (authorization code flow with PKCE).</p>
+				<p>Before the game can start, the launcher verifies game ownership through the Minecraft services API. There is no offline mode and no way to bypass authentication. Game files are downloaded only from Mojang's official servers; sign-in tokens are stored encrypted on the player's PC and never sent to third parties.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="wrap">
+			<p>© 2026 Nova Client · <a href="datenschutz.html">Datenschutz</a></p>
+			<p class="disclaimer">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
+		</div>
+	</footer>
+</body>
+</html>
